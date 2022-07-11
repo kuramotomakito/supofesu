@@ -122,10 +122,9 @@ p{
 
 .nav-items {
   position: absolute;
-  width: 250%; 
+  width: 200%; 
   top: 15%;
-  right:-75%;
-
+left: -50%;
 }
 
 
