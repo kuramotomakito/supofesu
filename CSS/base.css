@@ -1,0 +1,312 @@
+body {
+  font-family: "corporate-logo-ver2",'BIZ UDGothic','Noto Sans JP', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+  background:#fff;
+  position: relative;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+/* 調整用スタイル */
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+h5{
+color:#3838ae;
+}
+
+img{
+  width: 30%;
+  height: 30%;
+}
+h2 img{
+  width: 50%;
+  height: auto;
+}
+.doom{
+  width: 100%;
+  height: 100%;
+}
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+.jump{
+  margin-left: 100px;
+}
+
+
+/* ヘッダー */
+
+
+.header {
+  background-color: #ff483b;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  position: relative;
+}
+
+
+/* ヘッダーのロゴ部分 */
+.header__title {
+  width: 80px;
+}
+
+
+
+
+.header__title img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ヘッダーのナビ部分 */
+
+.header__nav {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%);
+  background-color: #fff;
+  transition: ease .4s;
+}
+
+
+.nav-items {
+  position: absolute;
+  width: 100%; 
+  top: 30%;
+}
+
+
+
+
+
+/* ナビのリンク */
+.nav-items__item a {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.nav-items__item:last-child a {
+  margin-bottom: 0;
+}
+
+
+/* ハンバーガーメニュー */
+
+.header__hamburger {
+  width: 48px;
+  height: 100%;
+
+}
+
+.hamburger {
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 9999;
+}
+
+
+/* ハンバーガーメニューの線 */
+.hamburger span {
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  position: relative;
+  transition: ease .4s;
+  display: block;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  margin: 8px 0;
+}
+
+.hamburger span:nth-child(3) {
+  top: 0;
+}
+
+
+/* ハンバーガーメニュークリック後のスタイル */
+.header__nav.active {
+  transform: translateX(0);
+  background-color: #ff483b;
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+
+}
+
+.hamburger.active span:nth-child(3) {
+  top: -21px;
+  transform: rotate(-45deg);
+}
+/*owari*/
+
+
+.tokyodome{
+  position: relative;
+} 
+
+.doom2{
+  width: 100%;
+  height: 100%;
+}
+.DomeMap{
+  position: absolute;
+  width: 80%;
+  height: auto;
+  right: 13%;
+  top: 18%;
+}
+.readmore1{
+  position: absolute;
+  width: 30%;
+  height: auto;
+  right: 35%;
+  top: 70%;
+}
+.sc3{
+
+
+background:linear-gradient(180deg,#fff 0%,#fff 50%,#ff483b 50%,#ff483b 100%);
+
+}
+
+.sc1,.sc4,footer{
+  background-color: #ff483b;
+}
+.sc5{
+  background-color: #3838ae;
+}
+@media screen and (max-width: 600px) {
+#kyogi{
+  grid-template-areas: "a b"
+                      "c c";
+
+}
+#main{
+  grid-area: a;
+}
+#side{
+  grid-area: b;
+}
+#atto{
+  grid-area: c;
+}
+
+}
+/*Topここまで*/
+table{
+  margin: 0;
+  border: solid 5px;
+  border-color: #ff483b;
+}
+th{
+  background-color: #ff483b;  /* 背景色指定 */
+  color: #fff;
+  font-size:120% ;
+  height:30px;
+  font-weight: bold;
+}
+.iro{
+  margin: 0;
+  width: 80%;
+}
+.irobetu{
+  padding: auto;
+  border: solid 5px #ff483b;
+  margin-bottom: 24px;
+}
+.ao{
+  color: #3838ae;
+  font-size:120% ;
+}
+.aka{
+  color: #ff483b;
+  font-size:120% ;
+}
+.siro{
+  color: #000;
+  font-size:120% ;
+}
+.ki{
+  color: #ffc300;
+  font-size:120% ;
+}
+/*
+main {
+  background-color: #f1f1f1;
+  height: 800px;
+  display: flex;
+  margin: 0 auto;
+  padding: auto;
+}
+
+
+
+
+footer {
+  width: 100%; height: 60px;
+  background-color: #ff483b;
+  position: absolute;
+  bottom: 0;
+
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}*/
