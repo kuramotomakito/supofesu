@@ -35,15 +35,9 @@ img {
   height: 40%;
 }
 
-h2 img {
-  width: 50%;
-  height: auto;
-}
 
-.doom {
-  width: 100%;
-  height: 100%;
-}
+
+
 
 html,
 body {
@@ -60,13 +54,14 @@ body {
   min-height: 100%; */
 }
 main {
+  margin-top: 9%;
   width: 100vw;
 }
 p {
   font-size: 30px;
   font-weight: bold;
-  color: #fff;
-  line-height: 100px;
+  color: #000;
+  line-height:80px;
 }
 
 
@@ -81,7 +76,7 @@ p {
 .header {
   background-color: #ff483b;
   width: 100%;
-  height: 50px;
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;

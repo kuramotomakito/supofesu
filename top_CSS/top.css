@@ -1,3 +1,17 @@
+main p {
+  color: #fff;
+}
+
+main h2 img {
+  width: 80%;
+  height: auto;
+}
+
+main .keybizyu {
+  width: 100%;
+  height: auto;
+}
+
 main .sc1 {
   background-color: #ff483b;
 }
@@ -33,7 +47,7 @@ main .sc3 .tokyodome {
   position: relative;
 }
 
-main .sc3 .doom2 {
+main .sc3 .doom {
   width: 100%;
   height: 100%;
 }
@@ -80,10 +94,10 @@ main .sc6 .mess {
   position: absolute;
   overflow: scroll;
   color: #000;
-  font-size: 30px;
+  font-size: 20px;
   width: 80%;
   height: 50%;
-  line-height: 50px;
+  line-height: 40px;
   top: 30%;
   left: 10%;
 }
@@ -105,9 +119,5 @@ main .sc6 #hukidasi2 {
 main .sc6 .mega {
   width: 30%;
   height: auto;
-}
-
-footer {
-  background-color: #ff483b;
 }
 /*# sourceMappingURL=top.css.map */

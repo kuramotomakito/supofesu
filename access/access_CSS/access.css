@@ -1,0 +1,26 @@
+main h3 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ff483b;
+  margin: 30px 0;
+}
+
+main h4 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff483b;
+  margin: 30px 0;
+}
+
+main .googlemap {
+  margin: 0 auto;
+  width: 90%;
+  height: 400px;
+}
+
+main .garttizu {
+  width: 90%;
+  height: auto;
+  margin-bottom: 25%;
+}
+/*# sourceMappingURL=access.css.map */
