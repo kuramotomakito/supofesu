@@ -1,0 +1,47 @@
+@charset "UTF-8";
+main .kaisaigaiyo table {
+  margin: 0;
+  border: solid 5px;
+  border-color: #ff483b;
+}
+
+main .kaisaigaiyo th {
+  background-color: #ff483b;
+  /* 背景色指定 */
+  color: #fff;
+  font-size: 120%;
+  height: 30px;
+  font-weight: bold;
+}
+
+main .irobetuannai .iro {
+  margin: 0;
+  width: 80%;
+}
+
+main .irobetuannai .irobetu {
+  padding: auto;
+  border: solid 5px #ff483b;
+  margin-bottom: 24px;
+}
+
+main .irobetuannai .ao {
+  color: #3838ae;
+  font-size: 120%;
+}
+
+main .irobetuannai .aka {
+  color: #ff483b;
+  font-size: 120%;
+}
+
+main .irobetuannai .siro {
+  color: #000;
+  font-size: 120%;
+}
+
+main .irobetuannai .ki {
+  color: #ffc300;
+  font-size: 120%;
+}
+/*# sourceMappingURL=kaisai.css.map */
