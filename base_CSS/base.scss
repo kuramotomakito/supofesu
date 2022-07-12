@@ -1,0 +1,472 @@
+body {
+    font-family: "corporate-logo-ver2", 'BIZ UDGothic', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    background: #fff;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 調整用スタイル */
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+h5 {
+    color: #3838ae;
+}
+
+img {
+    width: 40%;
+    height: 40%;
+}
+
+a {
+    list-style-type: none;
+    color: #fff;
+}
+
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+.container {
+
+    position: relative;
+    width: 100%;
+    /* height: auto !important;
+    height: 100%;
+    min-height: 100%; */
+}
+
+main {
+    top: 100px;
+    width: 100vw;
+}
+
+p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    line-height: 80px;
+}
+
+
+.jump {
+    margin-left: 100px;
+}
+
+
+/* ヘッダー */
+
+
+.header {
+    background-color: #ff483b;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    position: relative;
+}
+
+
+/* ヘッダーのロゴ部分 */
+.header__title {
+    width: 80px;
+}
+
+
+
+
+.header__title img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* ヘッダーのナビ部分 */
+
+.header__nav {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    background-color: #fff;
+    transition: ease .4s;
+}
+
+
+.nav-items {
+    position: absolute;
+    width: 200%;
+    top: 15%;
+    left: -50%;
+}
+
+
+
+
+
+/* ナビのリンク */
+.nav-items__item a {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.nav-items__item:last-child a {
+    margin-bottom: 0;
+}
+
+
+/* ハンバーガーメニュー */
+
+.header__hamburger {
+    width: 48px;
+    height: 100%;
+
+}
+
+.hamburger {
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 9999;
+}
+
+
+/* ハンバーガーメニューの線 */
+.hamburger span {
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    position: relative;
+    transition: ease .4s;
+    display: block;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    margin: 8px 0;
+}
+
+.hamburger span:nth-child(3) {
+    top: 0;
+}
+
+
+/* ハンバーガーメニュークリック後のスタイル */
+.header__nav.active {
+    transform: translateX(0);
+    background-color: #ff483b;
+}
+
+.hamburger.active span:nth-child(1) {
+    top: 5px;
+    transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+
+}
+
+.hamburger.active span:nth-child(3) {
+    top: -21px;
+    transform: rotate(-45deg);
+}
+
+footer {
+    background-color: #ff483b;
+}
+
+
+
+
+main {
+
+    /*top*/
+    p {
+        color: #fff;
+    }
+
+    h2 img {
+        width: 80%;
+        height: auto;
+    }
+
+    .keybizyu {
+        width: 100%;
+        height: auto;
+    }
+
+    .sc1 {
+        background-color: #ff483b;
+    }
+
+    .sc2 {
+        @media screen and (max-width: 600px) {
+            #kyogi {
+                grid-template-areas: "a b"
+                    "c c";
+
+            }
+
+            #main {
+                grid-area: a;
+            }
+
+            #side {
+                grid-area: b;
+            }
+
+            #atto {
+                grid-area: c;
+            }
+        }
+    }
+
+    .sc3 {
+        background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(50%, #fff), color-stop(50%, #ff483b), to(#ff483b));
+        background: linear-gradient(180deg, #fff 0%, #fff 50%, #ff483b 50%, #ff483b 100%);
+
+
+        .tokyodome {
+            position: relative;
+        }
+
+        .doom {
+            width: 100%;
+            height: 100%;
+        }
+
+        .DomeMap {
+            position: absolute;
+            width: 80%;
+            height: auto;
+            right: 13%;
+            top: 18%;
+        }
+
+        .readmore1 {
+            position: absolute;
+            width: 30%;
+            height: auto;
+            right: 35%;
+            top: 70%;
+        }
+    }
+
+    .sc4 {
+        background-color: #ff483b;
+
+        .googlemap {
+            margin: 0 auto;
+            width: 90%;
+            height: 400px;
+        }
+    }
+
+    .sc5 {
+        background-color: #3838ae;
+dl{
+            img{
+                width: 100%;
+                height: auto;
+                margin: 10% 0;
+        }
+    }
+        dd{
+                color: #fff;
+                font-size: 200%;
+            }
+        .corona{
+            position: relative;
+            dt{
+                width: 100%;
+                height: auto;
+                margin-right:30%;
+            }
+            dd{
+                position: absolute;
+                margin-left: 20%;
+                top:80%
+            }
+        }
+        .domekaisai{
+            position: relative;
+            dt{
+                width: 80%;
+                height: auto;
+                margin-left:30%;
+            }
+            dd{
+                position: absolute;
+                margin-left: 20%;
+                top:80%
+            }
+        }
+        .netyusyo{
+            position: relative;
+            dt{
+                width: 80%;
+                margin-right:30%;
+            }
+            dd{
+                position: absolute;
+                margin-left: 40%;
+                top:80%
+            }
+        }
+
+        }
+
+
+
+.sc6 {
+    margin-bottom: 25%;
+
+
+    .mesegi {
+        position: relative;
+    }
+
+    .mess {
+        position: absolute;
+        overflow: scroll;
+        color: #000;
+        font-size: 20px;
+        width: 80%;
+        height: 50%;
+        line-height: 40px;
+        top: 30%;
+        left: 10%;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    #hukidasi1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #hukidasi2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mega {
+        width: 30%;
+        height: auto;
+    }
+}
+
+/*開催*/
+.kaisaigaiyo table {
+    margin: 0;
+    border: solid 5px;
+    border-color: #ff483b;
+}
+
+.kaisaigaiyo th {
+    background-color: #ff483b;
+    /* 背景色指定 */
+    color: #fff;
+    font-size: 120%;
+    height: 30px;
+    font-weight: bold;
+}
+
+.irobetuannai .iro {
+    margin: 0;
+    width: 80%;
+}
+
+.irobetuannai .irobetu {
+    padding: 0;
+    border: solid 5px #ff483b;
+    margin-bottom: 24px;
+}
+
+.irobetuannai .ao {
+    color: #3838ae;
+    font-size: 120%;
+}
+
+.irobetuannai .aka {
+    color: #ff483b;
+    font-size: 120%;
+}
+
+.irobetuannai .siro {
+    color: #000;
+    font-size: 120%;
+}
+
+.irobetuannai .ki {
+    color: #ffc300;
+    font-size: 120%;
+}
+
+/*交通アクセス*/
+h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff483b;
+    margin: 30px 0;
+}
+
+h4 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff483b;
+    margin: 30px 0;
+}
+
+.googlemap {
+    margin: 0 auto;
+    width: 90%;
+    height: 400px;
+}
+
+.garttizu {
+    width: 90%;
+    height: auto;
+    margin-bottom: 25%;
+}
+}

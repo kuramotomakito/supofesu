@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "corporate-logo-ver2", 'BIZ UDGothic', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
   font-style: normal;
@@ -15,7 +16,6 @@ body {
 }
 
 /* 調整用スタイル */
-
 a {
   text-decoration: none;
   list-style-type: none;
@@ -35,9 +35,10 @@ img {
   height: 40%;
 }
 
-
-
-
+a {
+  list-style-type: none;
+  color: #fff;
+}
 
 html,
 body {
@@ -45,34 +46,31 @@ body {
   height: 100%;
 }
 
-
 .container {
   position: relative;
   width: 100%;
   /* height: auto !important;
-  height: 100%;
-  min-height: 100%; */
+    height: 100%;
+    min-height: 100%; */
 }
+
 main {
-  margin-top: 9%;
+  top: 100px;
   width: 100vw;
 }
+
 p {
   font-size: 30px;
   font-weight: bold;
   color: #000;
-  line-height:80px;
+  line-height: 80px;
 }
-
 
 .jump {
   margin-left: 100px;
 }
 
-
 /* ヘッダー */
-
-
 .header {
   background-color: #ff483b;
   width: 100%;
@@ -85,21 +83,23 @@ p {
 }
 
 .header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: inherit;
   position: relative;
 }
-
 
 /* ヘッダーのロゴ部分 */
 .header__title {
   width: 80px;
 }
-
-
-
 
 .header__title img {
   display: block;
@@ -108,7 +108,6 @@ p {
 }
 
 /* ヘッダーのナビ部分 */
-
 .header__nav {
   position: absolute;
   right: 0;
@@ -116,11 +115,12 @@ p {
   top: 0;
   width: 100%;
   height: 100vh;
-  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   background-color: #fff;
+  -webkit-transition: ease .4s;
   transition: ease .4s;
 }
-
 
 .nav-items {
   position: absolute;
@@ -128,10 +128,6 @@ p {
   top: 15%;
   left: -50%;
 }
-
-
-
-
 
 /* ナビのリンク */
 .nav-items__item a {
@@ -143,13 +139,10 @@ p {
   margin-bottom: 0;
 }
 
-
 /* ハンバーガーメニュー */
-
 .header__hamburger {
   width: 48px;
   height: 100%;
-
 }
 
 .hamburger {
@@ -158,13 +151,13 @@ p {
   z-index: 9999;
 }
 
-
 /* ハンバーガーメニューの線 */
 .hamburger span {
   width: 100%;
   height: 5px;
   background-color: #fff;
   position: relative;
+  -webkit-transition: ease .4s;
   transition: ease .4s;
   display: block;
 }
@@ -181,54 +174,289 @@ p {
   top: 0;
 }
 
-
 /* ハンバーガーメニュークリック後のスタイル */
 .header__nav.active {
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
   background-color: #ff483b;
 }
 
 .hamburger.active span:nth-child(1) {
   top: 5px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .hamburger.active span:nth-child(2) {
   opacity: 0;
-
 }
 
 .hamburger.active span:nth-child(3) {
   top: -21px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
-footer{
-  background-color: #ff483b;
-}
-
-
-/*
-main {
-  background-color: #f1f1f1;
-  height: 800px;
-  display: flex;
-  margin: 0 auto;
-  padding: auto;
-}
-
-
-
 
 footer {
-  width: 100%; height: 60px;
   background-color: #ff483b;
+}
+
+main {
+  /*top*/
+  /*開催*/
+  /*交通アクセス*/
+}
+
+main p {
+  color: #fff;
+}
+
+main h2 img {
+  width: 80%;
+  height: auto;
+}
+
+main .keybizyu {
+  width: 100%;
+  height: auto;
+}
+
+main .sc1 {
+  background-color: #ff483b;
+}
+
+@media screen and (max-width: 600px) {
+  main .sc2 #kyogi {
+        grid-template-areas: "a b" "c c";
+  }
+  main .sc2 #main {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+  }
+  main .sc2 #side {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: b;
+  }
+  main .sc2 #atto {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: c;
+  }
+}
+
+main .sc3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(50%, #fff), color-stop(50%, #ff483b), to(#ff483b));
+  background: linear-gradient(180deg, #fff 0%, #fff 50%, #ff483b 50%, #ff483b 100%);
+}
+
+main .sc3 .tokyodome {
+  position: relative;
+}
+
+main .sc3 .doom {
+  width: 100%;
+  height: 100%;
+}
+
+main .sc3 .DomeMap {
   position: absolute;
-  bottom: 0;
+  width: 80%;
+  height: auto;
+  right: 13%;
+  top: 18%;
+}
 
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main .sc3 .readmore1 {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  right: 35%;
+  top: 70%;
+}
 
-}*/
+main .sc4 {
+  background-color: #ff483b;
+}
+
+main .sc4 .googlemap {
+  margin: 0 auto;
+  width: 90%;
+  height: 400px;
+}
+
+main .sc5 {
+  background-color: #3838ae;
+}
+
+main .sc5 dl img {
+  width: 100%;
+  height: auto;
+  margin: 10% 0;
+}
+
+main .sc5 dd {
+  color: #fff;
+  font-size: 200%;
+}
+
+main .sc5 .corona {
+  position: relative;
+}
+
+main .sc5 .corona dt {
+  width: 100%;
+  height: auto;
+  margin-right: 30%;
+}
+
+main .sc5 .corona dd {
+  position: absolute;
+  margin-left: 20%;
+  top: 80%;
+}
+
+main .sc5 .domekaisai {
+  position: relative;
+}
+
+main .sc5 .domekaisai dt {
+  width: 80%;
+  height: auto;
+  margin-left: 30%;
+}
+
+main .sc5 .domekaisai dd {
+  position: absolute;
+  margin-left: 20%;
+  top: 80%;
+}
+
+main .sc5 .netyusyo {
+  position: relative;
+}
+
+main .sc5 .netyusyo dt {
+  width: 80%;
+  margin-right: 30%;
+}
+
+main .sc5 .netyusyo dd {
+  position: absolute;
+  margin-left: 40%;
+  top: 80%;
+}
+
+main .sc6 {
+  margin-bottom: 25%;
+}
+
+main .sc6 .mesegi {
+  position: relative;
+}
+
+main .sc6 .mess {
+  position: absolute;
+  overflow: scroll;
+  color: #000;
+  font-size: 20px;
+  width: 80%;
+  height: 50%;
+  line-height: 40px;
+  top: 30%;
+  left: 10%;
+}
+
+main .sc6 ::-webkit-scrollbar {
+  display: none;
+}
+
+main .sc6 #hukidasi1 {
+  width: 100%;
+  height: 100%;
+}
+
+main .sc6 #hukidasi2 {
+  width: 100%;
+  height: 100%;
+}
+
+main .sc6 .mega {
+  width: 30%;
+  height: auto;
+}
+
+main .kaisaigaiyo table {
+  margin: 0;
+  border: solid 5px;
+  border-color: #ff483b;
+}
+
+main .kaisaigaiyo th {
+  background-color: #ff483b;
+  /* 背景色指定 */
+  color: #fff;
+  font-size: 120%;
+  height: 30px;
+  font-weight: bold;
+}
+
+main .irobetuannai .iro {
+  margin: 0;
+  width: 80%;
+}
+
+main .irobetuannai .irobetu {
+  padding: 0;
+  border: solid 5px #ff483b;
+  margin-bottom: 24px;
+}
+
+main .irobetuannai .ao {
+  color: #3838ae;
+  font-size: 120%;
+}
+
+main .irobetuannai .aka {
+  color: #ff483b;
+  font-size: 120%;
+}
+
+main .irobetuannai .siro {
+  color: #000;
+  font-size: 120%;
+}
+
+main .irobetuannai .ki {
+  color: #ffc300;
+  font-size: 120%;
+}
+
+main h3 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ff483b;
+  margin: 30px 0;
+}
+
+main h4 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff483b;
+  margin: 30px 0;
+}
+
+main .googlemap {
+  margin: 0 auto;
+  width: 90%;
+  height: 400px;
+}
+
+main .garttizu {
+  width: 90%;
+  height: auto;
+  margin-bottom: 25%;
+}
+/*# sourceMappingURL=base.css.map */
