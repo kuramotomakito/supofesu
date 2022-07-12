@@ -237,27 +237,6 @@ main {
         background-color: #ff483b;
     }
 
-    .sc2 {
-        @media screen and (max-width: 600px) {
-            #kyogi {
-                grid-template-areas: "a b"
-                    "c c";
-
-            }
-
-            #main {
-                grid-area: a;
-            }
-
-            #side {
-                grid-area: b;
-            }
-
-            #atto {
-                grid-area: c;
-            }
-        }
-    }
 
     .sc3 {
         background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(50%, #fff), color-stop(50%, #ff483b), to(#ff483b));
@@ -302,171 +281,190 @@ main {
 
     .sc5 {
         background-color: #3838ae;
-dl{
-            img{
+
+        dl {
+            img {
                 width: 100%;
                 height: auto;
-                margin: 10% 0;
+                margin-top: 10%;
+            }
         }
-    }
-        dd{
-                color: #fff;
+
+        dd {
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: auto;
+            transition: 0.5s;
+            &:hover {
+                background-color: #333
+            }
+        }
+
+        .corona {
+            position: relative;
+
+            dt {
+                width: 80%;
+                height: auto;
+                margin-right: 30%;
+            }
+
+            dd { font-size: 200%;
+                position: absolute;
+                top: 85%;
+
+            }
+        }
+
+        .domekaisai {
+            position: relative;
+
+            dt {
+                width: 80%;
+                height: auto;
+                margin-left: 20%;
+            }
+
+            dd {
                 font-size: 200%;
-            }
-        .corona{
-            position: relative;
-            dt{
-                width: 100%;
-                height: auto;
-                margin-right:30%;
-            }
-            dd{
                 position: absolute;
-                margin-left: 20%;
-                top:80%
+                top: 85%;
             }
         }
-        .domekaisai{
+
+        .netyusyo {
             position: relative;
-            dt{
+
+            dt {
                 width: 80%;
-                height: auto;
-                margin-left:30%;
+                margin-right: 30%;
             }
-            dd{
+
+            dd {            
+                font-size: 200%;
                 position: absolute;
-                margin-left: 20%;
-                top:80%
+                top: 85%;
             }
-        }
-        .netyusyo{
-            position: relative;
-            dt{
-                width: 80%;
-                margin-right:30%;
-            }
-            dd{
-                position: absolute;
-                margin-left: 40%;
-                top:80%
-            }
+            margin-bottom: 10%;
         }
 
-        }
-
-
-
-.sc6 {
-    margin-bottom: 25%;
-
-
-    .mesegi {
-        position: relative;
     }
 
-    .mess {
-        position: absolute;
-        overflow: scroll;
-        color: #000;
-        font-size: 20px;
+
+
+    .sc6 {
+        margin-bottom: 25%;
+
+
+        .mesegi {
+            position: relative;
+        }
+
+        .mess {
+            position: absolute;
+            overflow: scroll;
+            color: #000;
+            font-size: 200%;
+            width: 80%;
+            height: 50%;
+            line-height: 150%;
+            top: 30%;
+            left: 10%;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        #hukidasi1 {
+            width: 100%;
+            height: 100%;
+        }
+
+        #hukidasi2 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mega {
+            width: 30%;
+            height: auto;
+        }
+    }
+
+    /*開催*/
+    .kaisaigaiyo table {
+        margin: 0;
+        border: solid 5px;
+        border-color: #ff483b;
+    }
+
+    .kaisaigaiyo th {
+        background-color: #ff483b;
+        /* 背景色指定 */
+        color: #fff;
+        font-size: 120%;
+        height: 30px;
+        font-weight: bold;
+    }
+
+    .irobetuannai .iro {
+        margin: 0;
         width: 80%;
-        height: 50%;
-        line-height: 40px;
-        top: 30%;
-        left: 10%;
     }
 
-    ::-webkit-scrollbar {
-        display: none;
+    .irobetuannai .irobetu {
+        padding: 0;
+        border: solid 5px #ff483b;
+        margin-bottom: 24px;
     }
 
-    #hukidasi1 {
-        width: 100%;
-        height: 100%;
+    .irobetuannai .ao {
+        color: #3838ae;
+        font-size: 120%;
     }
 
-    #hukidasi2 {
-        width: 100%;
-        height: 100%;
+    .irobetuannai .aka {
+        color: #ff483b;
+        font-size: 120%;
     }
 
-    .mega {
-        width: 30%;
+    .irobetuannai .siro {
+        color: #000;
+        font-size: 120%;
+    }
+
+    .irobetuannai .ki {
+        color: #ffc300;
+        font-size: 120%;
+    }
+
+    /*交通アクセス*/
+    h3 {
+        font-size: 50px;
+        font-weight: bold;
+        color: #ff483b;
+        margin: 30px 0;
+    }
+
+    h4 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #ff483b;
+        margin: 30px 0;
+    }
+
+    .googlemap {
+        margin: 0 auto;
+        width: 90%;
+        height: 400px;
+    }
+
+    .garttizu {
+        width: 90%;
         height: auto;
+        margin-bottom: 25%;
     }
-}
-
-/*開催*/
-.kaisaigaiyo table {
-    margin: 0;
-    border: solid 5px;
-    border-color: #ff483b;
-}
-
-.kaisaigaiyo th {
-    background-color: #ff483b;
-    /* 背景色指定 */
-    color: #fff;
-    font-size: 120%;
-    height: 30px;
-    font-weight: bold;
-}
-
-.irobetuannai .iro {
-    margin: 0;
-    width: 80%;
-}
-
-.irobetuannai .irobetu {
-    padding: 0;
-    border: solid 5px #ff483b;
-    margin-bottom: 24px;
-}
-
-.irobetuannai .ao {
-    color: #3838ae;
-    font-size: 120%;
-}
-
-.irobetuannai .aka {
-    color: #ff483b;
-    font-size: 120%;
-}
-
-.irobetuannai .siro {
-    color: #000;
-    font-size: 120%;
-}
-
-.irobetuannai .ki {
-    color: #ffc300;
-    font-size: 120%;
-}
-
-/*交通アクセス*/
-h3 {
-    font-size: 50px;
-    font-weight: bold;
-    color: #ff483b;
-    margin: 30px 0;
-}
-
-h4 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #ff483b;
-    margin: 30px 0;
-}
-
-.googlemap {
-    margin: 0 auto;
-    width: 90%;
-    height: 400px;
-}
-
-.garttizu {
-    width: 90%;
-    height: auto;
-    margin-bottom: 25%;
-}
 }

@@ -225,28 +225,6 @@ main .sc1 {
   background-color: #ff483b;
 }
 
-@media screen and (max-width: 600px) {
-  main .sc2 #kyogi {
-        grid-template-areas: "a b" "c c";
-  }
-  main .sc2 #main {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: a;
-  }
-  main .sc2 #side {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: b;
-  }
-  main .sc2 #atto {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: c;
-  }
-}
-
 main .sc3 {
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(50%, #fff), color-stop(50%, #ff483b), to(#ff483b));
   background: linear-gradient(180deg, #fff 0%, #fff 50%, #ff483b 50%, #ff483b 100%);
@@ -294,12 +272,21 @@ main .sc5 {
 main .sc5 dl img {
   width: 100%;
   height: auto;
-  margin: 10% 0;
+  margin-top: 10%;
 }
 
 main .sc5 dd {
   color: #fff;
-  font-size: 200%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .sc5 dd:hover {
+  background-color: #333;
 }
 
 main .sc5 .corona {
@@ -307,15 +294,15 @@ main .sc5 .corona {
 }
 
 main .sc5 .corona dt {
-  width: 100%;
+  width: 80%;
   height: auto;
   margin-right: 30%;
 }
 
 main .sc5 .corona dd {
+  font-size: 200%;
   position: absolute;
-  margin-left: 20%;
-  top: 80%;
+  top: 85%;
 }
 
 main .sc5 .domekaisai {
@@ -325,17 +312,18 @@ main .sc5 .domekaisai {
 main .sc5 .domekaisai dt {
   width: 80%;
   height: auto;
-  margin-left: 30%;
+  margin-left: 20%;
 }
 
 main .sc5 .domekaisai dd {
+  font-size: 200%;
   position: absolute;
-  margin-left: 20%;
-  top: 80%;
+  top: 85%;
 }
 
 main .sc5 .netyusyo {
   position: relative;
+  margin-bottom: 10%;
 }
 
 main .sc5 .netyusyo dt {
@@ -344,9 +332,9 @@ main .sc5 .netyusyo dt {
 }
 
 main .sc5 .netyusyo dd {
+  font-size: 200%;
   position: absolute;
-  margin-left: 40%;
-  top: 80%;
+  top: 85%;
 }
 
 main .sc6 {
@@ -361,10 +349,10 @@ main .sc6 .mess {
   position: absolute;
   overflow: scroll;
   color: #000;
-  font-size: 20px;
+  font-size: 200%;
   width: 80%;
   height: 50%;
-  line-height: 40px;
+  line-height: 150%;
   top: 30%;
   left: 10%;
 }
