@@ -3,7 +3,7 @@ body {
   font-family: "corporate-logo-ver2", 'BIZ UDGothic', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 100%;
   text-align: center;
   color: #333;
   background: #fff;
@@ -38,6 +38,11 @@ img {
 a {
   list-style-type: none;
   color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 html,
@@ -115,24 +120,34 @@ p {
   top: 0;
   width: 100%;
   height: 100vh;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(500%);
+          transform: translateX(500%);
   background-color: #fff;
   -webkit-transition: ease .4s;
   transition: ease .4s;
 }
 
 .nav-items {
+  width: 100%;
   position: absolute;
-  width: 200%;
-  top: 15%;
-  left: -50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 0;
+}
+
+.nav-items img {
+  width: 80%;
+  height: auto;
 }
 
 /* ナビのリンク */
 .nav-items__item a {
   display: block;
-  margin-bottom: 50px;
+  width: 100%;
+  margin: 0 0 50px 0;
+  padding: 0;
 }
 
 .nav-items__item:last-child a {
@@ -349,7 +364,7 @@ main .sc6 .mess {
   position: absolute;
   overflow: scroll;
   color: #000;
-  font-size: 200%;
+  font-size: 100%;
   width: 80%;
   height: 50%;
   line-height: 150%;
