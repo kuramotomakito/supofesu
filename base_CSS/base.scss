@@ -63,9 +63,8 @@ body {
     min-height: 100%; */
 }
 
-main {
-    top: 100px;
-    width: 100vw;
+.daimei{
+    padding-top: 20%;
 }
 
 p {
@@ -74,11 +73,48 @@ p {
     color: #000;
     line-height: 80px;
 }
-
-
-.jump {
-    margin-left: 100px;
+html{
+    scroll-behavior: smooth;
 }
+.jump{
+    display: block;
+    width: 15%;
+    height: auto;
+    padding-top: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 10000;
+}
+.gotop::before{
+    content: "";
+    display: block;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+.gotop:hover{
+    opacity: 1;
+}
+@media(max-width:750px){
+    .gotop{
+        opacity: 1;
+        border: none;
+        background: none;
+        bottom: 10px;
+        right: 10px;
+    }
+    .gotop::before{
+        bottom: 0;
+    }
+}
+
+
 
 
 /* ヘッダー */
@@ -231,7 +267,11 @@ footer {
 
 
 main {
-
+    
+        top: 200px;
+        width: 100vw;
+}
+#mtop{
     /*top*/
     p {
         color: #fff;
@@ -407,15 +447,18 @@ main {
             height: auto;
         }
     }
-
+}
+#mkaisai{
     /*開催*/
-    .kaisaigaiyo table {
-        margin: 0;
+    .kaisaigaiyo{
+        width: 100%;
+        height: auto;
+    table {
         border: solid 5px;
         border-color: #ff483b;
     }
 
-    .kaisaigaiyo th {
+    th {
         background-color: #ff483b;
         /* 背景色指定 */
         color: #fff;
@@ -423,14 +466,12 @@ main {
         height: 30px;
         font-weight: bold;
     }
-
+    }
     .irobetuannai .iro {
-        margin: 0;
         width: 80%;
     }
 
     .irobetuannai .irobetu {
-        padding: 0;
         border: solid 5px #ff483b;
         margin-bottom: 24px;
     }
@@ -454,7 +495,82 @@ main {
         color: #ffc300;
         font-size: 120%;
     }
+}
+#mschedule{
+    .daimei{
+        margin-bottom: 5%;
+    }
+    /*schedule*/
+/*タブ切り替え全体のスタイル*/
+.tabs {
+    margin: 20% 0;
+    padding-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    margin: 0 auto;}
+  
+  /*タブのスタイル*/
+  .tab_item {
+    width: 50%;
+    height: auto;
+    padding: 5% 0;
+    border-bottom: 3px solid #ff483b;
+    background-color: #fff;
+    line-height: 200%;
+    font-size: 150%;
+    text-align: center;
 
+    color: #565656;
+    display: block;
+    float: left;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  .tab_item:hover {
+    opacity: 0.75;
+  }
+  
+  /*ラジオボタンを全て消す*/
+  input[name="tab_item"] {
+    display: none;
+  }
+  
+  /*タブ切り替えの中身のスタイル*/
+  .tab_content {
+    display: none;
+    padding: 40px 40px 0;
+    clear: both;
+    overflow: hidden;
+  }
+  
+  
+  /*選択されているタブのコンテンツのみを表示*/
+  #am:checked ~ #am_content,
+  #pm:checked ~ #pm_content{
+    display: block;
+  }
+  
+  /*選択されているタブのスタイルを変える*/
+  .tabs input:checked + .tab_item {
+    background-color: #ff483b;
+    color: #fff;
+  }
+  dl{
+    position: relative;
+
+    font-size: 200%;
+  }
+  dt{
+    text-align: left;
+    margin: 5% 0 2% 20%;
+  }
+  dd{
+    line-height: 200%;
+    text-align: center;
+  }
+}
+#maccess{
     /*交通アクセス*/
     h3 {
         font-size: 50px;

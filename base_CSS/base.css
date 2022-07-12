@@ -59,9 +59,8 @@ body {
     min-height: 100%; */
 }
 
-main {
-  top: 100px;
-  width: 100vw;
+.daimei {
+  padding-top: 20%;
 }
 
 p {
@@ -71,8 +70,50 @@ p {
   line-height: 80px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .jump {
-  margin-left: 100px;
+  display: block;
+  width: 15%;
+  height: auto;
+  padding-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  z-index: 10000;
+}
+
+.gotop::before {
+  content: "";
+  display: block;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.gotop:hover {
+  opacity: 1;
+}
+
+@media (max-width: 750px) {
+  .gotop {
+    opacity: 1;
+    border: none;
+    background: none;
+    bottom: 10px;
+    right: 10px;
+  }
+  .gotop::before {
+    bottom: 0;
+  }
 }
 
 /* ヘッダー */
@@ -217,44 +258,47 @@ footer {
 }
 
 main {
-  /*top*/
-  /*開催*/
-  /*交通アクセス*/
+  top: 200px;
+  width: 100vw;
 }
 
-main p {
+#mtop {
+  /*top*/
+}
+
+#mtop p {
   color: #fff;
 }
 
-main h2 img {
+#mtop h2 img {
   width: 80%;
   height: auto;
 }
 
-main .keybizyu {
+#mtop .keybizyu {
   width: 100%;
   height: auto;
 }
 
-main .sc1 {
+#mtop .sc1 {
   background-color: #ff483b;
 }
 
-main .sc3 {
+#mtop .sc3 {
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(50%, #fff), color-stop(50%, #ff483b), to(#ff483b));
   background: linear-gradient(180deg, #fff 0%, #fff 50%, #ff483b 50%, #ff483b 100%);
 }
 
-main .sc3 .tokyodome {
+#mtop .sc3 .tokyodome {
   position: relative;
 }
 
-main .sc3 .doom {
+#mtop .sc3 .doom {
   width: 100%;
   height: 100%;
 }
 
-main .sc3 .DomeMap {
+#mtop .sc3 .DomeMap {
   position: absolute;
   width: 80%;
   height: auto;
@@ -262,7 +306,7 @@ main .sc3 .DomeMap {
   top: 18%;
 }
 
-main .sc3 .readmore1 {
+#mtop .sc3 .readmore1 {
   position: absolute;
   width: 30%;
   height: auto;
@@ -270,27 +314,27 @@ main .sc3 .readmore1 {
   top: 70%;
 }
 
-main .sc4 {
+#mtop .sc4 {
   background-color: #ff483b;
 }
 
-main .sc4 .googlemap {
+#mtop .sc4 .googlemap {
   margin: 0 auto;
   width: 90%;
   height: 400px;
 }
 
-main .sc5 {
+#mtop .sc5 {
   background-color: #3838ae;
 }
 
-main .sc5 dl img {
+#mtop .sc5 dl img {
   width: 100%;
   height: auto;
   margin-top: 10%;
 }
 
-main .sc5 dd {
+#mtop .sc5 dd {
   color: #fff;
   margin: 0;
   padding: 0;
@@ -300,67 +344,67 @@ main .sc5 dd {
   transition: 0.5s;
 }
 
-main .sc5 dd:hover {
+#mtop .sc5 dd:hover {
   background-color: #333;
 }
 
-main .sc5 .corona {
+#mtop .sc5 .corona {
   position: relative;
 }
 
-main .sc5 .corona dt {
+#mtop .sc5 .corona dt {
   width: 80%;
   height: auto;
   margin-right: 30%;
 }
 
-main .sc5 .corona dd {
+#mtop .sc5 .corona dd {
   font-size: 200%;
   position: absolute;
   top: 85%;
 }
 
-main .sc5 .domekaisai {
+#mtop .sc5 .domekaisai {
   position: relative;
 }
 
-main .sc5 .domekaisai dt {
+#mtop .sc5 .domekaisai dt {
   width: 80%;
   height: auto;
   margin-left: 20%;
 }
 
-main .sc5 .domekaisai dd {
+#mtop .sc5 .domekaisai dd {
   font-size: 200%;
   position: absolute;
   top: 85%;
 }
 
-main .sc5 .netyusyo {
+#mtop .sc5 .netyusyo {
   position: relative;
   margin-bottom: 10%;
 }
 
-main .sc5 .netyusyo dt {
+#mtop .sc5 .netyusyo dt {
   width: 80%;
   margin-right: 30%;
 }
 
-main .sc5 .netyusyo dd {
+#mtop .sc5 .netyusyo dd {
   font-size: 200%;
   position: absolute;
   top: 85%;
 }
 
-main .sc6 {
+#mtop .sc6 {
   margin-bottom: 25%;
 }
 
-main .sc6 .mesegi {
+#mtop .sc6 .mesegi {
   position: relative;
 }
 
-main .sc6 .mess {
+#mtop .sc6 .mess {
   position: absolute;
   overflow: scroll;
   color: #000;
@@ -372,32 +416,40 @@ main .sc6 .mess {
   left: 10%;
 }
 
-main .sc6 ::-webkit-scrollbar {
+#mtop .sc6 ::-webkit-scrollbar {
   display: none;
 }
 
-main .sc6 #hukidasi1 {
+#mtop .sc6 #hukidasi1 {
   width: 100%;
   height: 100%;
 }
 
-main .sc6 #hukidasi2 {
+#mtop .sc6 #hukidasi2 {
   width: 100%;
   height: 100%;
 }
 
-main .sc6 .mega {
+#mtop .sc6 .mega {
   width: 30%;
   height: auto;
 }
 
-main .kaisaigaiyo table {
-  margin: 0;
+#mkaisai {
+  /*開催*/
+}
+
+#mkaisai .kaisaigaiyo {
+  width: 100%;
+  height: auto;
+}
+
+#mkaisai .kaisaigaiyo table {
   border: solid 5px;
   border-color: #ff483b;
 }
 
-main .kaisaigaiyo th {
+#mkaisai .kaisaigaiyo th {
   background-color: #ff483b;
   /* 背景色指定 */
   color: #fff;
@@ -406,58 +458,141 @@ main .kaisaigaiyo th {
   font-weight: bold;
 }
 
-main .irobetuannai .iro {
-  margin: 0;
+#mkaisai .irobetuannai .iro {
   width: 80%;
 }
 
-main .irobetuannai .irobetu {
-  padding: 0;
+#mkaisai .irobetuannai .irobetu {
   border: solid 5px #ff483b;
   margin-bottom: 24px;
 }
 
-main .irobetuannai .ao {
+#mkaisai .irobetuannai .ao {
   color: #3838ae;
   font-size: 120%;
 }
 
-main .irobetuannai .aka {
+#mkaisai .irobetuannai .aka {
   color: #ff483b;
   font-size: 120%;
 }
 
-main .irobetuannai .siro {
+#mkaisai .irobetuannai .siro {
   color: #000;
   font-size: 120%;
 }
 
-main .irobetuannai .ki {
+#mkaisai .irobetuannai .ki {
   color: #ffc300;
   font-size: 120%;
 }
 
-main h3 {
+#mschedule {
+  /*schedule*/
+  /*タブ切り替え全体のスタイル*/
+  /*タブのスタイル*/
+  /*ラジオボタンを全て消す*/
+  /*タブ切り替えの中身のスタイル*/
+  /*選択されているタブのコンテンツのみを表示*/
+  /*選択されているタブのスタイルを変える*/
+}
+
+#mschedule .daimei {
+  margin-bottom: 5%;
+}
+
+#mschedule .tabs {
+  margin: 20% 0;
+  padding-bottom: 40px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  margin: 0 auto;
+}
+
+#mschedule .tab_item {
+  width: 50%;
+  height: auto;
+  padding: 5% 0;
+  border-bottom: 3px solid #ff483b;
+  background-color: #fff;
+  line-height: 200%;
+  font-size: 150%;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  font-weight: bold;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#mschedule .tab_item:hover {
+  opacity: 0.75;
+}
+
+#mschedule input[name="tab_item"] {
+  display: none;
+}
+
+#mschedule .tab_content {
+  display: none;
+  padding: 40px 40px 0;
+  clear: both;
+  overflow: hidden;
+}
+
+#mschedule #am:checked ~ #am_content,
+#mschedule #pm:checked ~ #pm_content {
+  display: block;
+}
+
+#mschedule .tabs input:checked + .tab_item {
+  background-color: #ff483b;
+  color: #fff;
+}
+
+#mschedule dl {
+  position: relative;
+  font-size: 200%;
+}
+
+#mschedule dt {
+  text-align: left;
+  margin: 5% 0 2% 20%;
+}
+
+#mschedule dd {
+  line-height: 200%;
+  text-align: center;
+}
+
+#maccess {
+  /*交通アクセス*/
+}
+
+#maccess h3 {
   font-size: 50px;
   font-weight: bold;
   color: #ff483b;
   margin: 30px 0;
 }
 
-main h4 {
+#maccess h4 {
   font-size: 40px;
   font-weight: bold;
   color: #ff483b;
   margin: 30px 0;
 }
 
-main .googlemap {
+#maccess .googlemap {
   margin: 0 auto;
   width: 90%;
   height: 400px;
 }
 
-main .garttizu {
+#maccess .garttizu {
   width: 90%;
   height: auto;
   margin-bottom: 25%;
