@@ -84,37 +84,9 @@ html {
   letter-spacing: -1px;
   position: fixed;
   bottom: 0;
+  opacity: 1;
   right: 20px;
   z-index: 10000;
-}
-
-.gotop::before {
-  content: "";
-  display: block;
-  top: 25%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  position: absolute;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.gotop:hover {
-  opacity: 1;
-}
-
-@media (max-width: 750px) {
-  .gotop {
-    opacity: 1;
-    border: none;
-    background: none;
-    bottom: 10px;
-    right: 10px;
-  }
-  .gotop::before {
-    bottom: 0;
-  }
 }
 
 /* ヘッダー */
@@ -341,10 +313,12 @@ main {
   padding: 0;
   width: 100%;
   height: auto;
+  font-size: 150%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
+ar
 #mtop .sc5 dd:hover {
   background-color: #333;
 }
@@ -360,7 +334,6 @@ main {
 }
 
 #mtop .sc5 .corona dd {
-  font-size: 200%;
   position: absolute;
   top: 85%;
 }
@@ -376,7 +349,6 @@ main {
 }
 
 #mtop .sc5 .domekaisai dd {
-  font-size: 200%;
   position: absolute;
   top: 85%;
 }
@@ -392,7 +364,6 @@ main {
 }
 
 #mtop .sc5 .netyusyo dd {
-  font-size: 200%;
   position: absolute;
   top: 85%;
 }
@@ -458,6 +429,13 @@ main {
   color: #fff;
   font-size: 120%;
   height: 30px;
+  font-weight: bold;
+}
+
+#mkaisai .kaisaigaiyo dt {
+  font-size: 150%;
+  margin: 20px 0;
+  color: #ff483b;
   font-weight: bold;
 }
 
