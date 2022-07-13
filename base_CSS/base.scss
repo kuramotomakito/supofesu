@@ -26,6 +26,10 @@ li {
     list-style-type: none;
 }
 
+h4{
+    font-size: 150%;
+    line-height: 150%;
+}
 h5 {
     color: #3838ae;
 }
@@ -79,6 +83,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.read{
+    width: 50%;
+    padding: 20px 0 30px;
+}
 .jump {
     display: block;
     width: 20%;
@@ -256,9 +264,6 @@ main {
 #mtop {
 
     /*top*/
-    p {
-        color: #fff;
-    }
 
     h2 img {
         width: 80%;
@@ -272,6 +277,10 @@ main {
 
     .sc1 {
         background-color: #ff483b;
+        p {
+            color: #fff;
+        }
+    
     }
 
 
@@ -286,7 +295,7 @@ main {
 
         .doom {
             width: 100%;
-            height: 100%;
+            height: auto;
         }
 
         .DomeMap {
@@ -299,16 +308,19 @@ main {
 
         .readmore1 {
             position: absolute;
-            width: 30%;
+
             height: auto;
-            right: 35%;
-            top: 70%;
+            right: 25%;
+            top: 55%;
         }
     }
 
     .sc4 {
         background-color: #ff483b;
-
+        p {
+            color: #fff;
+        }
+    
         .googlemap {
             margin: 0 auto;
             width: 90%;
@@ -395,12 +407,14 @@ main {
 
     .sc6 {
         margin-bottom: 25%;
-
+        h4{
+            font-size: 150%;
+            line-height: 150%;
+        }
 
         .mesegi {
             position: relative;
         }
-
         .mess {
             position: absolute;
             overflow: scroll;
@@ -452,7 +466,8 @@ main {
             background-color: #ff483b;
             /* 背景色指定 */
             color: #fff;
-            font-size: 120%;
+            font-size:200%;
+            padding: 15px ;
             height: 30px;
             font-weight: bold;
         }
@@ -472,6 +487,11 @@ main {
     }
 
     .irobetuannai {
+        h4
+        h5{
+            margin-bottom: 10px;
+                        font-size: 150%;
+        }
         .iro {
             width: 100%;
         }
@@ -617,5 +637,15 @@ main {
         width: 90%;
         height: auto;
         margin-bottom: 25%;
+    }
+}
+#mprecautions{
+    h3{
+        font-size: 200%;
+        color: #ff483b;
+        margin-bottom:5%;
+    }
+    dt{
+        font-size:200% ;
     }
 }
