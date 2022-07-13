@@ -63,8 +63,9 @@ body {
     min-height: 100%; */
 }
 
-.daimei{
-    padding-top: 20%;
+.daimei {
+    padding: 100px 0 15% 0 ;
+    width: 80%;
 }
 
 p {
@@ -73,12 +74,14 @@ p {
     color: #000;
     line-height: 80px;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-.jump{
+
+.jump {
     display: block;
-    width: 15%;
+    width: 20%;
     height: auto;
     padding-top: 30px;
     text-align: center;
@@ -88,7 +91,8 @@ html{
     right: 20px;
     z-index: 10000;
 }
-.gotop::before{
+
+.gotop::before {
     content: "";
     display: block;
     top: 25%;
@@ -98,18 +102,21 @@ html{
     position: absolute;
     transform: rotate(-45deg);
 }
-.gotop:hover{
+
+.gotop:hover {
     opacity: 1;
 }
-@media(max-width:750px){
-    .gotop{
+
+@media(max-width:750px) {
+    .gotop {
         opacity: 1;
         border: none;
         background: none;
         bottom: 10px;
         right: 10px;
     }
-    .gotop::before{
+
+    .gotop::before {
         bottom: 0;
     }
 }
@@ -176,7 +183,8 @@ html{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0;
-    img{
+
+    img {
         width: 80%;
         height: auto;
     }
@@ -267,11 +275,13 @@ footer {
 
 
 main {
-    
-        top: 200px;
-        width: 100vw;
+
+    top: 200px;
+    width: 100vw;
 }
-#mtop{
+
+#mtop {
+
     /*top*/
     p {
         color: #fff;
@@ -351,6 +361,7 @@ main {
             width: 100%;
             height: auto;
             transition: 0.5s;
+
             &:hover {
                 background-color: #333
             }
@@ -365,7 +376,8 @@ main {
                 margin-right: 30%;
             }
 
-            dd { font-size: 200%;
+            dd {
+                font-size: 200%;
                 position: absolute;
                 top: 85%;
 
@@ -396,11 +408,12 @@ main {
                 margin-right: 30%;
             }
 
-            dd {            
+            dd {
                 font-size: 200%;
                 position: absolute;
                 top: 85%;
             }
+
             margin-bottom: 10%;
         }
 
@@ -448,129 +461,159 @@ main {
         }
     }
 }
-#mkaisai{
+
+#mkaisai {
+
     /*開催*/
-    .kaisaigaiyo{
+    .kaisaigaiyo {
         width: 100%;
         height: auto;
-    table {
-        border: solid 5px;
-        border-color: #ff483b;
+        table {
+            
+            width: 100%;
+            border: solid 5px;
+            border-color: #ff483b;
+            line-height: 170%;
+        }
+
+        th {
+            background-color: #ff483b;
+            /* 背景色指定 */
+            color: #fff;
+            font-size: 120%;
+            height: 30px;
+            font-weight: bold;
+        }
+        dd{
+            a{line-height: 200%;
+                color: #fff;
+                background-color: #ff483b;
+                padding: 5px ;
+            }
+        }
     }
 
-    th {
-        background-color: #ff483b;
-        /* 背景色指定 */
-        color: #fff;
-        font-size: 120%;
-        height: 30px;
-        font-weight: bold;
-    }
-    }
-    .irobetuannai .iro {
-        width: 80%;
-    }
+    .irobetuannai {
+        .iro {
+            width: 100%;
+        }
 
-    .irobetuannai .irobetu {
-        border: solid 5px #ff483b;
-        margin-bottom: 24px;
-    }
+        .irobetu {
+            border: solid 5px #ff483b;
+            line-height: 150%;
+            margin-bottom: 24px;
+            padding:0 0 10px 0;
+        }
 
-    .irobetuannai .ao {
-        color: #3838ae;
-        font-size: 120%;
-    }
+        .ao {
+            color: #3838ae;
+            font-size: 180%;
+            margin:10px 0;
+        }
 
-    .irobetuannai .aka {
-        color: #ff483b;
-        font-size: 120%;
-    }
+        .aka {
+            color: #ff483b;
+            font-size: 180%;
+            margin:10px 0;
+        }
 
-    .irobetuannai .siro {
-        color: #000;
-        font-size: 120%;
-    }
+        .siro {
+            color: #000;
+            font-size: 180%;
+                        margin:10px 0;
+        }
 
-    .irobetuannai .ki {
-        color: #ffc300;
-        font-size: 120%;
+        .ki {
+            color: #ffc300;
+            font-size: 180%;
+            margin:10px 0;
+        }
     }
 }
-#mschedule{
-    .daimei{
+
+#mschedule {
+    .daimei {
         margin-bottom: 5%;
     }
+
     /*schedule*/
-/*タブ切り替え全体のスタイル*/
-.tabs {
-    margin: 20% 0;
-    padding-bottom: 40px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 90%;
-    margin: 0 auto;}
-  
-  /*タブのスタイル*/
-  .tab_item {
-    width: 50%;
-    height: auto;
-    padding: 5% 0;
-    border-bottom: 3px solid #ff483b;
-    background-color: #fff;
-    line-height: 200%;
-    font-size: 150%;
-    text-align: center;
+    /*タブ切り替え全体のスタイル*/
+    .tabs {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        margin: 0 auto;
+    }
 
-    color: #565656;
-    display: block;
-    float: left;
-    font-weight: bold;
-    transition: all 0.2s ease;
-  }
-  .tab_item:hover {
-    opacity: 0.75;
-  }
-  
-  /*ラジオボタンを全て消す*/
-  input[name="tab_item"] {
-    display: none;
-  }
-  
-  /*タブ切り替えの中身のスタイル*/
-  .tab_content {
-    display: none;
-    padding: 40px 40px 0;
-    clear: both;
-    overflow: hidden;
-  }
-  
-  
-  /*選択されているタブのコンテンツのみを表示*/
-  #am:checked ~ #am_content,
-  #pm:checked ~ #pm_content{
-    display: block;
-  }
-  
-  /*選択されているタブのスタイルを変える*/
-  .tabs input:checked + .tab_item {
-    background-color: #ff483b;
-    color: #fff;
-  }
-  dl{
-    position: relative;
+    /*タブのスタイル*/
+    .tab_item {
+        width: 50%;
+        height: auto;
+        padding: 5% 0;
+        border-bottom: 3px solid #ff483b;
+        background-color: #fff;
+        line-height: 200%;
+        font-size: 150%;
+        text-align: center;
 
-    font-size: 200%;
-  }
-  dt{
-    text-align: left;
-    margin: 5% 0 2% 20%;
-  }
-  dd{
-    line-height: 200%;
-    text-align: center;
-  }
+        color: #565656;
+        display: block;
+        float: left;
+        font-weight: bold;
+        transition: all 0.2s ease;
+    }
+
+    .tab_item:hover {
+        opacity: 0.75;
+    }
+
+    /*ラジオボタンを全て消す*/
+    input[name="tab_item"] {
+        display: none;
+    }
+
+    /*タブ切り替えの中身のスタイル*/
+    .tab_content {
+        display: none;
+        padding: 40px 0;
+        margin-bottom: 20%;
+        clear: both;
+        overflow: hidden;
+    }
+
+
+    /*選択されているタブのコンテンツのみを表示*/
+    #am:checked~#am_content,
+    #pm:checked~#pm_content {
+        display: block;
+    }
+
+    /*選択されているタブのスタイルを変える*/
+    .tabs input:checked+.tab_item {
+        background-color: #ff483b;
+        color: #fff;
+    }
+
+    dl {
+        position: relative;
+        font-weight: bold;
+        font-size: 250%;
+    }
+
+    dt {
+        text-align: left;
+        margin: 5% 0 2% 20%;
+    }
+
+    dd {
+        font-size: 120%;
+        line-height: 200%;
+        text-align: center;
+    }
 }
-#maccess{
+
+#maccess {
+
     /*交通アクセス*/
     h3 {
         font-size: 50px;
