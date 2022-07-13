@@ -311,72 +311,69 @@ main {
   color: #fff;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 80%;
   height: auto;
   font-size: 150%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-ar
-#mtop .sc5 dd:hover {
   background-color: #333;
 }
 
-#mtop .sc5 .corona {
+#mtop .corona {
   position: relative;
 }
 
-#mtop .sc5 .corona dt {
+#mtop .corona dt {
   width: 80%;
   height: auto;
   margin-right: 30%;
 }
 
-#mtop .sc5 .corona dd {
+#mtop .corona dd {
+  width: 95%;
   position: absolute;
   top: 85%;
 }
 
-#mtop .sc5 .domekaisai {
+#mtop .domekaisai {
   position: relative;
 }
 
-#mtop .sc5 .domekaisai dt {
+#mtop .domekaisai dt {
   width: 80%;
   height: auto;
   margin-left: 20%;
 }
 
-#mtop .sc5 .domekaisai dd {
+#mtop .domekaisai dd {
+  left: 5%;
   position: absolute;
   top: 85%;
 }
 
-#mtop .sc5 .netyusyo {
+#mtop .netyusyo {
   position: relative;
   margin-bottom: 10%;
 }
 
-#mtop .sc5 .netyusyo dt {
+#mtop .netyusyo dt {
   width: 80%;
   margin-right: 30%;
 }
 
-#mtop .sc5 .netyusyo dd {
+#mtop .netyusyo dd {
   position: absolute;
+  left: 10%;
   top: 85%;
 }
 
-#mtop .sc6 {
+.sc6 {
   margin-bottom: 25%;
 }
 
-#mtop .sc6 .mesegi {
+.sc6 .mesegi {
   position: relative;
 }
 
-#mtop .sc6 .mess {
+.sc6 .mess {
   position: absolute;
   overflow: scroll;
   color: #000;
@@ -388,21 +385,21 @@ ar
   left: 10%;
 }
 
-#mtop .sc6 ::-webkit-scrollbar {
+.sc6 ::-webkit-scrollbar {
   display: none;
 }
 
-#mtop .sc6 #hukidasi1 {
+.sc6 #hukidasi1 {
   width: 100%;
   height: 100%;
 }
 
-#mtop .sc6 #hukidasi2 {
+.sc6 #hukidasi2 {
   width: 100%;
   height: 100%;
 }
 
-#mtop .sc6 .mega {
+.sc6 .mega {
   width: 30%;
   height: auto;
 }

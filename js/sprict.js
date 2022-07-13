@@ -27,13 +27,13 @@ $(function () {
 $(function () {
   // スクロールしたら「トップに戻る」ボタンが表示される
   const coronaButton = $(".corona");
-  const scrollHeight = 100;
-  toTopButton.hide();
+  const scrollHeight = 500;
+  coronaButton.hide();
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      toTopButton.fadeIn();
+    if ($(this).scrollTop() > 500) {
+      coronaButton.fadeIn();
     } else {
-      toTopButton.fadeOut();
+      coronaButton.fadeOut();
     }
   });
 });

@@ -331,14 +331,10 @@ main {
             color: #fff;
             margin: 0;
             padding: 0;
-            width: 100%;
+            width: 80%;
             height: auto;
             font-size: 150%;
-            transition: 0.5s;
-            ar
-
-            &:hover {
-                background-color: #333
+            background-color: #333
             }
         }
 
@@ -352,7 +348,7 @@ main {
             }
 
             dd {
-                
+                width: 95%;
                 position: absolute;
                 top: 85%;
 
@@ -369,7 +365,7 @@ main {
             }
 
             dd {
-    
+                left: 5%;
                 position: absolute;
                 top: 85%;
             }
@@ -386,6 +382,7 @@ main {
             dd {
                 
                 position: absolute;
+                left: 10%;
                 top: 85%;
             }
 
@@ -435,7 +432,7 @@ main {
             height: auto;
         }
     }
-}
+
 
 #mkaisai {
 
