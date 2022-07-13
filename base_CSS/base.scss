@@ -12,6 +12,7 @@ body {
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 /* 調整用スタイル */
@@ -51,11 +52,6 @@ a {
 
 
 
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
 
 
 .container {
@@ -93,7 +89,6 @@ html {
     height: auto;
     padding-top: 30px;
     text-align: center;
-    letter-spacing: -1px;
     position: fixed;
     bottom: 0;
     opacity: 1;
@@ -258,8 +253,9 @@ footer {
 main {
 
     top: 200px;
-    width: 100vw;
+width: 100%;
 }
+
 
 #mtop {
 
@@ -330,80 +326,13 @@ main {
 
     .sc5 {
         background-color: #3838ae;
-
-        dl {
-            img {
-                width: 100%;
-                height: auto;
-                margin-top: 10%;
-            }
+        ul{
+        img{
+            margin-top: 10%;
+            width: 90%;
         }
-
-        dd {
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            width: 80%;
-            height: auto;
-            font-size: 150%;
-            background-color: #333
-            }
-        }
-
-        .corona {
-            position: relative;
-
-            dt {
-                width: 80%;
-                height: auto;
-                margin-right: 30%;
-            }
-
-            dd {
-                width: 95%;
-                position: absolute;
-                top: 85%;
-
-            }
-        }
-
-        .domekaisai {
-            position: relative;
-
-            dt {
-                width: 80%;
-                height: auto;
-                margin-left: 20%;
-            }
-
-            dd {
-                left: 5%;
-                position: absolute;
-                top: 85%;
-            }
-        }
-
-        .netyusyo {
-            position: relative;
-
-            dt {
-                width: 80%;
-                margin-right: 30%;
-            }
-
-            dd {
-                
-                position: absolute;
-                left: 10%;
-                top: 85%;
-            }
-
-            margin-bottom: 10%;
-        }
-
     }
-
-
+    }
 
     .sc6 {
         margin-bottom: 25%;
@@ -446,7 +375,7 @@ main {
             height: auto;
         }
     }
-
+}
 
 #mkaisai {
 
@@ -640,12 +569,38 @@ main {
     }
 }
 #mprecautions{
-    h3{
+    h3{width: 100%;
         font-size: 200%;
         color: #ff483b;
-        margin-bottom:5%;
+        margin:10% 0;
+    }
+
+    font-weight: bold;
+    
+    dl{
+        width: 80%;
+        margin:0 10% ;
     }
     dt{
-        font-size:200% ;
+        color: #3838ae;
+        font-size:180% ;
+        margin: 10% 0 5% 00;
     }
+    dd{
+        font-size: 120%;
+        line-height: 180%;
+    }
+    #seky{
+        font-size: 160%;
+    }
+
+    p{
+        font-size: 120%;
+        line-height: 180%;
+        margin: 0 10%;
+    }
+#nep{
+    margin-bottom: 20%;
+}
+
 }

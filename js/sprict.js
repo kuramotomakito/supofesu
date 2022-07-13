@@ -24,16 +24,16 @@ $(function () {
     return false;
   });
 });
-$(function () {
+// $(function () {
   // スクロールしたら「トップに戻る」ボタンが表示される
-  const coronaButton = $(".corona");
-  const scrollHeight = 500;
-  coronaButton.hide();
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 500) {
-      coronaButton.fadeIn();
-    } else {
-      coronaButton.fadeOut();
-    }
-  });
-});
+//   const coronaButton = $(".corona");
+//   const scrollHeight = 500;
+//   coronaButton.hide();
+//   $(window).scroll(function () {
+//     if ($(this).scrollTop() > 500) {
+//       coronaButton.fadeIn();
+//     } else {
+//       coronaButton.fadeOut();
+//     }
+//   });
+// });

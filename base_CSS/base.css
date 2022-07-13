@@ -50,12 +50,6 @@ a {
   background: transparent;
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
 .container {
   position: relative;
   width: 100%;
@@ -91,7 +85,6 @@ html {
   height: auto;
   padding-top: 30px;
   text-align: center;
-  letter-spacing: -1px;
   position: fixed;
   bottom: 0;
   opacity: 1;
@@ -242,7 +235,7 @@ footer {
 
 main {
   top: 200px;
-  width: 100vw;
+  width: 100%;
 }
 
 #mtop {
@@ -314,84 +307,25 @@ main {
   background-color: #3838ae;
 }
 
-#mtop .sc5 dl img {
-  width: 100%;
-  height: auto;
+#mtop .sc5 ul img {
   margin-top: 10%;
+  width: 90%;
 }
 
-#mtop .sc5 dd {
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  width: 80%;
-  height: auto;
-  font-size: 150%;
-  background-color: #333;
-}
-
-#mtop .corona {
-  position: relative;
-}
-
-#mtop .corona dt {
-  width: 80%;
-  height: auto;
-  margin-right: 30%;
-}
-
-#mtop .corona dd {
-  width: 95%;
-  position: absolute;
-  top: 85%;
-}
-
-#mtop .domekaisai {
-  position: relative;
-}
-
-#mtop .domekaisai dt {
-  width: 80%;
-  height: auto;
-  margin-left: 20%;
-}
-
-#mtop .domekaisai dd {
-  left: 5%;
-  position: absolute;
-  top: 85%;
-}
-
-#mtop .netyusyo {
-  position: relative;
-  margin-bottom: 10%;
-}
-
-#mtop .netyusyo dt {
-  width: 80%;
-  margin-right: 30%;
-}
-
-#mtop .netyusyo dd {
-  position: absolute;
-  left: 10%;
-  top: 85%;
-}
-
-.sc6 {
+#mtop .sc6 {
   margin-bottom: 25%;
 }
 
-.sc6 h4 {
+#mtop .sc6 h4 {
   font-size: 150%;
   line-height: 150%;
 }
 
-.sc6 .mesegi {
+#mtop .sc6 .mesegi {
   position: relative;
 }
 
-.sc6 .mess {
+#mtop .sc6 .mess {
   position: absolute;
   overflow: scroll;
   color: #000;
@@ -403,21 +337,21 @@ main {
   left: 10%;
 }
 
-.sc6 ::-webkit-scrollbar {
+#mtop .sc6 ::-webkit-scrollbar {
   display: none;
 }
 
-.sc6 #hukidasi1 {
+#mtop .sc6 #hukidasi1 {
   width: 100%;
   height: 100%;
 }
 
-.sc6 #hukidasi2 {
+#mtop .sc6 #hukidasi2 {
   width: 100%;
   height: 100%;
 }
 
-.sc6 .mega {
+#mtop .sc6 .mega {
   width: 30%;
   height: auto;
 }
@@ -615,13 +549,44 @@ h5 {
   margin-bottom: 25%;
 }
 
+#mprecautions {
+  font-weight: bold;
+}
+
 #mprecautions h3 {
+  width: 100%;
   font-size: 200%;
   color: #ff483b;
-  margin-bottom: 5%;
+  margin: 10% 0;
+}
+
+#mprecautions dl {
+  width: 80%;
+  margin: 0 10%;
 }
 
 #mprecautions dt {
-  font-size: 200%;
+  color: #3838ae;
+  font-size: 180%;
+  margin: 10% 0 5% 00;
+}
+
+#mprecautions dd {
+  font-size: 120%;
+  line-height: 180%;
+}
+
+#mprecautions #seky {
+  font-size: 160%;
+}
+
+#mprecautions p {
+  font-size: 120%;
+  line-height: 180%;
+  margin: 0 10%;
+}
+
+#mprecautions #nep {
+  margin-bottom: 20%;
 }
 /*# sourceMappingURL=base.css.map */
