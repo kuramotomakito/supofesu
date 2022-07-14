@@ -59,8 +59,10 @@ a {
 }
 
 .daimei {
+  margin: auto;
   padding: 100px 0 15% 0;
   width: 80%;
+  height: auto;
 }
 
 p {
@@ -357,6 +359,7 @@ main {
 }
 
 #mkaisai {
+  overflow: hidden;
   /*開催*/
 }
 
@@ -369,7 +372,7 @@ main {
   width: 100%;
   border: solid 5px;
   border-color: #ff483b;
-  line-height: 170%;
+  font-weight: bold;
 }
 
 #mkaisai .kaisaigaiyo th {
@@ -377,9 +380,8 @@ main {
   /* 背景色指定 */
   color: #fff;
   font-size: 200%;
-  padding: 15px;
+  padding: 15px 0;
   height: 30px;
-  font-weight: bold;
 }
 
 #mkaisai .kaisaigaiyo dt {
@@ -389,15 +391,21 @@ main {
   font-weight: bold;
 }
 
-#mkaisai .kaisaigaiyo dd a {
+#mkaisai .kaisaigaiyo dd {
   line-height: 200%;
+}
+
+#mkaisai .kaisaigaiyo dd a {
   color: #fff;
   background-color: #ff483b;
   padding: 5px;
 }
 
-#mkaisai .irobetuannai h4
-h5 {
+#mkaisai .irobetuannai h4 {
+  font-size: 200%;
+}
+
+#mkaisai .irobetuannai h5 {
   margin-bottom: 10px;
   font-size: 150%;
 }
@@ -407,9 +415,11 @@ h5 {
 }
 
 #mkaisai .irobetuannai .irobetu {
+  width: 100%;
+  height: auto;
   border: solid 5px #ff483b;
   line-height: 150%;
-  margin-bottom: 24px;
+  margin: 0 0 24px 0;
   padding: 0 0 10px 0;
 }
 
@@ -588,5 +598,35 @@ h5 {
 
 #mprecautions #nep {
   margin-bottom: 20%;
+}
+
+#mkyougi img {
+  width: auto;
+}
+
+#mkyougi h3 {
+  width: 100%;
+}
+
+#mkyougi dl {
+  width: 80%;
+  margin: 0 10%;
+}
+
+#mkyougi dt {
+  width: 100%;
+}
+
+#mkyougi dd {
+  margin-top: 10%;
+  color: #fff;
+  font-size: 200%;
+}
+
+#mkyougi .syumoku {
+  background-color: #ff483b;
+  border-radius: 10px;
+  margin: 10%;
+  padding: 5% 0;
 }
 /*# sourceMappingURL=base.css.map */
