@@ -598,8 +598,13 @@ main {
 }
 
 #mkyougi {
+  overflow: hidden;
   font-weight: bold;
   /*ポップアップ表示**/
+}
+
+#mkyougi #ato img {
+  width: 80%;
 }
 
 #mkyougi button {
@@ -615,10 +620,6 @@ main {
 #mkyougi button a {
   color: #ff483b;
   font-weight: bold;
-}
-
-#mkyougi h3 {
-  width: 100%;
 }
 
 #mkyougi .modal {
