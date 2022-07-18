@@ -652,8 +652,14 @@ main {
 }
 
 #mkyougi .modal__content p {
-  font-size: 100%;
-  line-height: 100%;
+  font-size: 150%;
+  line-height: 200%;
+}
+
+#mkyougi .modal__content a {
+  font-size: 150%;
+  margin-top: 10%;
+  background-color: #ff483b;
 }
 
 #mkyougi dl {

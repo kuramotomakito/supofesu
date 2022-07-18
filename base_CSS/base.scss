@@ -654,7 +654,6 @@ width: 100%;
 }
 .modal__content{
     background: #fff;
-
     left: 45%;
     padding: 40px;
     position: absolute;
@@ -664,9 +663,14 @@ width: 100%;
     height: auto;
 
     p{
-        font-size: 100%;
-        line-height: 100%;
+        font-size: 150%;
+        line-height: 200%;
 
+    }
+    a{
+        font-size: 150%;
+        margin-top: 10%;
+        background-color: #ff483b;
     }
 }
 dl{
