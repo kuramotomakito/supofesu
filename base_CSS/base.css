@@ -363,11 +363,6 @@ main {
   /*開催*/
 }
 
-#mkaisai .kaisaigaiyo {
-  width: 100%;
-  height: auto;
-}
-
 #mkaisai .kaisaigaiyo table {
   width: 100%;
   border: solid 5px;
@@ -398,7 +393,12 @@ main {
 #mkaisai .kaisaigaiyo dd a {
   color: #fff;
   background-color: #ff483b;
-  padding: 5px;
+  padding: 5px 0;
+}
+
+#mkaisai .kaisaigaiyo dd .googlemap {
+  width: 100%;
+  height: auto;
 }
 
 #mkaisai .irobetuannai h4 {
@@ -415,8 +415,6 @@ main {
 }
 
 #mkaisai .irobetuannai .irobetu {
-  width: 100%;
-  height: auto;
   border: solid 5px #ff483b;
   line-height: 150%;
   margin: 0 0 24px 0;
@@ -476,7 +474,6 @@ main {
   border-bottom: 3px solid #ff483b;
   background-color: #fff;
   line-height: 200%;
-  font-size: 150%;
   text-align: center;
   color: #565656;
   display: block;
@@ -515,7 +512,7 @@ main {
 #mschedule dl {
   position: relative;
   font-weight: bold;
-  font-size: 250%;
+  font-size: 150%;
 }
 
 #mschedule dt {
@@ -600,8 +597,23 @@ main {
   margin-bottom: 20%;
 }
 
-#mkyougi img {
-  width: auto;
+#mkyougi {
+  font-weight: bold;
+}
+
+#mkyougi button {
+  border: 2px solid #000;
+  position: relative;
+  font-size: 120%;
+  background-color: #fff;
+  margin: 0 5% 2%;
+  padding: 0;
+  width: 30%;
+}
+
+#mkyougi button a {
+  color: #ff483b;
+  font-weight: bold;
 }
 
 #mkyougi h3 {
@@ -609,12 +621,17 @@ main {
 }
 
 #mkyougi dl {
-  width: 80%;
-  margin: 0 10%;
+  width: 90%;
+  margin: 0 5%;
 }
 
 #mkyougi dt {
+  position: relative;
   width: 100%;
+}
+
+#mkyougi dt img {
+  width: 80%;
 }
 
 #mkyougi dd {
@@ -624,9 +641,69 @@ main {
 }
 
 #mkyougi .syumoku {
+  position: relative;
   background-color: #ff483b;
   border-radius: 10px;
   margin: 10%;
   padding: 5% 0;
+}
+
+#mdome {
+  /*タブのスタイル*/
+  /*ラジオボタンを全て消す*/
+  /*タブ切り替えの中身のスタイル*/
+  /*選択されているタブのコンテンツのみを表示*/
+  /*選択されているタブのスタイルを変える*/
+}
+
+#mdome .tabs {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  margin: 0 auto;
+}
+
+#mdome .tab_item {
+  width: 50%;
+  height: auto;
+  padding: 5% 0;
+  border-bottom: 3px solid #ff483b;
+  background-color: #fff;
+  line-height: 200%;
+  font-size: 150%;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  font-weight: bold;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#mdome .tab_item:hover {
+  opacity: 0.75;
+}
+
+#mdome input[name="tab_item"] {
+  display: none;
+}
+
+#mdome .tab_content {
+  display: none;
+  padding: 40px 0;
+  margin-bottom: 20%;
+  clear: both;
+  overflow: hidden;
+}
+
+#mdome #itirui:checked ~ #itirui_content,
+#mdome #sibahu:checked ~ #sibahu_content {
+  display: block;
+}
+
+#mdome .tabs input:checked + .tab_item {
+  background-color: #ff483b;
+  color: #fff;
 }
 /*# sourceMappingURL=base.css.map */

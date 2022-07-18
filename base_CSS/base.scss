@@ -384,8 +384,7 @@ width: 100%;
 
     /*開催*/
     .kaisaigaiyo {
-        width: 100%;
-        height: auto;
+        
         table {
             width: 100%;
             border: solid 5px;
@@ -414,7 +413,11 @@ width: 100%;
                 
                 color: #fff;
                 background-color: #ff483b;
-                padding: 5px ;
+                padding: 5px 0 ;
+            }
+            .googlemap{
+                width: 100%;
+                height: auto;
             }
         }
     }
@@ -432,8 +435,6 @@ width: 100%;
         }
 
         .irobetu {
-            width: 100%;
-            height: auto;
 
             border: solid 5px #ff483b;
             line-height: 150%;
@@ -489,7 +490,6 @@ width: 100%;
         border-bottom: 3px solid #ff483b;
         background-color: #fff;
         line-height: 200%;
-        font-size: 150%;
         text-align: center;
 
         color: #565656;
@@ -533,7 +533,7 @@ width: 100%;
     dl {
         position: relative;
         font-weight: bold;
-        font-size: 250%;
+        font-size: 150%;
     }
 
     dt {
@@ -614,29 +614,103 @@ width: 100%;
 
 }
 #mkyougi{
+    font-weight: bold;
+    button{
+        border: 2px solid #000;
+        position: relative;
+        font-size: 120%;
+        background-color: #fff;
+        margin: 0 5% 2%;
+        padding: 0 ;
+        a{
+            color: #ff483b;
+            font-weight: bold;
+        }
+        width:30%;
 
-img{
-    width: auto;
-}
+
+    }
 h3{
     width: 100%;
 }
 dl{
-    width:80%;
-    margin: 0 10%;
+    width:90%;
+    margin: 0 5%;
 }
 dt{
-    width: 100%;
+    position: relative;
+    width:100%;
+    img{
+        width: 80%;
+    }
 }
 dd{margin-top: 10%;
     color: #fff;
     font-size: 200%;
 }
 .syumoku{
+    position: relative;
     background-color: #ff483b;
     border-radius: 10px;
     margin:10%;
     padding: 5% 0;
     
 }
+}
+#mdome{
+    .tabs {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /*タブのスタイル*/
+    .tab_item {
+        width: 50%;
+        height: auto;
+        padding: 5% 0;
+        border-bottom: 3px solid #ff483b;
+        background-color: #fff;
+        line-height: 200%;
+        font-size: 150%;
+        text-align: center;
+
+        color: #565656;
+        display: block;
+        float: left;
+        font-weight: bold;
+        transition: all 0.2s ease;
+    }
+
+    .tab_item:hover {
+        opacity: 0.75;
+    }
+
+    /*ラジオボタンを全て消す*/
+    input[name="tab_item"] {
+        display: none;
+    }
+
+    /*タブ切り替えの中身のスタイル*/
+    .tab_content {
+        display: none;
+        padding: 40px 0;
+        margin-bottom: 20%;
+        clear: both;
+        overflow: hidden;
+    }
+
+
+    /*選択されているタブのコンテンツのみを表示*/
+    #itirui:checked~#itirui_content,
+    #sibahu:checked~#sibahu_content {
+        display: block;
+    }
+
+    /*選択されているタブのスタイルを変える*/
+    .tabs input:checked+.tab_item {
+        background-color: #ff483b;
+        color: #fff;
+    }
 }
