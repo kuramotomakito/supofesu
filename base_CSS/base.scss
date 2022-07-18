@@ -633,9 +633,43 @@ width: 100%;
 h3{
     width: 100%;
 }
+/*ポップアップ表示**/
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.modal__bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    right: 5%;
+}
+.modal__content{
+    background: #fff;
+
+    left: 45%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: auto;
+
+    p{
+        font-size: 100%;
+        line-height: 100%;
+
+    }
+}
 dl{
     width:90%;
     margin: 0 5%;
+    z-index: 800;
 }
 dt{
     position: relative;
@@ -654,7 +688,7 @@ dd{margin-top: 10%;
     border-radius: 10px;
     margin:10%;
     padding: 5% 0;
-    
+    z-index: 1;
 }
 }
 #mdome{
@@ -694,11 +728,24 @@ dd{margin-top: 10%;
 
     /*タブ切り替えの中身のスタイル*/
     .tab_content {
+        width: 100%;
         display: none;
         padding: 40px 0;
         margin-bottom: 20%;
         clear: both;
         overflow: hidden;
+        line-height: 200%;
+        font-size: 120%;
+        img{
+            width: 80%;
+        }
+        h3{
+            color: #ff483b;
+            margin-bottom: 2%;
+        }
+        h4{
+color:#3838ae ;
+        }
     }
 
 
@@ -713,4 +760,6 @@ dd{margin-top: 10%;
         background-color: #ff483b;
         color: #fff;
     }
+    
+
 }

@@ -24,16 +24,92 @@ $(function () {
     return false;
   });
 });
-// $(function () {
-  // スクロールしたら「トップに戻る」ボタンが表示される
-//   const coronaButton = $(".corona");
-//   const scrollHeight = 500;
-//   coronaButton.hide();
-//   $(window).scroll(function () {
-//     if ($(this).scrollTop() > 500) {
-//       coronaButton.fadeIn();
-//     } else {
-//       coronaButton.fadeOut();
-//     }
-//   });
-// });
+
+/*pop1*/
+$(function(){
+    $('.js-modal1-open').on('click',function(){
+        $('.js-modal1').fadeIn();
+        return false;
+    });
+    $('.js-modal1-close').on('click',function(){
+        $('.js-modal1').fadeOut();
+        return false;
+    });
+});
+/*pop2*/
+$(function(){
+  $('.js-modal2-open').on('click',function(){
+      $('.js-modal2').fadeIn();
+      return false;
+  });
+  $('.js-modal2-close').on('click',function(){
+      $('.js-modal2').fadeOut();
+      return false;
+  });
+});
+/*pop3*/
+$(function(){
+  $('.js-modal3-open').on('click',function(){
+      $('.js-modal3').fadeIn();
+      return false;
+  });
+  $('.js-modal3-close').on('click',function(){
+      $('.js-modal3').fadeOut();
+      return false;
+  });
+});
+/*pop4*/
+$(function(){
+  $('.js-modal4-open').on('click',function(){
+      $('.js-modal4').fadeIn();
+      return false;
+  });
+  $('.js-modal4-close').on('click',function(){
+      $('.js-modal4').fadeOut();
+      return false;
+  });
+});
+/*pop5*/
+$(function(){
+  $('.js-modal5-open').on('click',function(){
+      $('.js-modal5').fadeIn();
+      return false;
+  });
+  $('.js-modal5-close').on('click',function(){
+      $('.js-modal5').fadeOut();
+      return false;
+  });
+});
+/*pop6*/
+$(function(){
+  $('.js-modal6-open').on('click',function(){
+      $('.js-modal6').fadeIn();
+      return false;
+  });
+  $('.js-modal6-close').on('click',function(){
+      $('.js-modal6').fadeOut();
+      return false;
+  });
+});
+/*pop8*/
+$(function(){
+  $('.js-modal8-open').on('click',function(){
+      $('.js-modal8').fadeIn();
+      return false;
+  });
+  $('.js-modal8-close').on('click',function(){
+      $('.js-modal8').fadeOut();
+      return false;
+  });
+});
+/*pop7*/
+$(function(){
+  $('.js-modal7-open').on('click',function(){
+      $('.js-modal7').fadeIn();
+      return false;
+  });
+  $('.js-modal7close').on('click',function(){
+      $('.js-modal7').fadeOut();
+      return false;
+  });
+});
